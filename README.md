@@ -60,7 +60,7 @@ Validate input, call `ft_read` and `ft_obtain`, **manage memory**, and return th
 
  - **Peer-to-peer learning** – was the most valuable resource; this project was developed with guidance and collaboration from other 42 students;
  - **Books** – Classic references to learn C from scratch and understand various programming notions;
- - **Tutorials and articles** – Consulted to better understand specific C concepts and function implementations.
+ - **Tutorials and articles** – Consulted to better understand the steps in the implementation of `get_next_line()`, including the use of static buffers.
 
 ### AI Assistance
 AI tools were used to help:
