@@ -49,12 +49,12 @@ Use `ft_obtain` to extract the next line and update the static buffer for the ne
 Validate input, call `ft_read` and `ft_obtain`, **manage memory**, and return the line.
 
 - **Return**
- 
-  Returns the next line read from the fd, including the newline character (`\n`) if present.
+
+Returns the next line read from the fd, including the newline character (`\n`) if present.
   
-  Returns `NULL` if there is nothing left to read or if an error occurs.
+Returns `NULL` if there is nothing left to read or if an error occurs.
   
-  Each call returns one line at a time, preserving unread data in the static buffer for the next call, without losing the current reading position.
+Each call returns one line at a time, preserving unread data in the static buffer for the next call, without losing the current reading position.
 
 ## Resources
 
