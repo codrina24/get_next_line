@@ -85,39 +85,3 @@ char	*get_next_line(int fd)
 	x = ft_obtain(line);
 	return (line);
 }
-/*
-#include <fcntl.h>
-#include <stdio.h>
-
-
-
-int	main(int ac, char **av)
-{
-	int		fd;
-	char	*nextline;
-
-	nextline = NULL;
-	(void)ac;
-	fd = open(av[1], O_RDONLY);
-	while (nextline == get_next_line(fd))
-	{
-		printf("%s\n", nextline);
-		free(nextline);
-	}s
-	close(fd);
-	return (0);
-}
-*/
-/*
-int	main(void)
-{
-	int		fd;
-	char	*line;
-
-
-	fd = open("text.txt", O_RDONLY);
-	while ((line = get_next_line(fd)) > 0)
-		printf("%s\n", line);
-	close(fd);
-	return (0);
-} */

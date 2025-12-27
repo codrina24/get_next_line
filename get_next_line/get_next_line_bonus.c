@@ -85,25 +85,4 @@ char	*get_next_line(int fd)
 	x[fd] = ft_obtain(line);
 	return (line);
 }
-/*
-#include <stdio.h>
 
-int	main(void)
-{
-	int		fd;
-	char	*line;
-
-	fd = open("text.txt", O_RDONLY);
-	if (fd == -1)
-	{
-		printf("Error opening file");
-		return (1);
-	}
-	while ((line = get_next_line(fd)) != NULL)
-	{
-		printf("Line: %s\n", line);
-		free(line);
-	}
-	close(fd);
-	return (0);
-} */
