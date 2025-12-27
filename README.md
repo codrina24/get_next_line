@@ -8,7 +8,7 @@ Reads a file descriptor line by line
 ## Description
 
  Get_next_line is a C project that implements a function capable of reading a file descriptor line by line. The goal of this project is to simplify line-based input handling, memory management, static variables, and buffered reading.
- By calling get_next_line() repeatedly, the program returns one line at a time from a file or from standard input, without reading the entire content at once.
+By calling get_next_line() repeatedly, the program returns one line at a time from a file or from standard input, without reading the entire content at once.
 
 ## Instructions
  The project must be compiled with a buffer size defined at compile time: 
@@ -25,8 +25,27 @@ The function reads from the file descriptor using read() with a fixed buffer siz
 
 Data is appended to the static storage until a newline character (\n) is found or no more data can be read.
 
-## Bonus part
- The bonus part of this project allows get_next_line to handle multiple file descriptors using a single static variable, while preserving the reading state of each descriptor independently.
+## Step by step until we get line by line 
+ -**Setup**
+Create `get_next_line.c`, `get_next_line_utils.c`, and `get_next_line.h`.
+
+ -**Helper functions**
+ 
+Implement `ft_strlen_next`, `ft_strchr_next`, `ft_strjoin_next`, `ft_strdup_next`, and `ft_substr_next` for string handling.
+
+ -**Reading process**
+
+Use `read()` in ft_read to read BUFFER_SIZE chunks.
+
+Append to static storage until a newline('\n') or EOF is reached.
+
+ -**Get the lines**
+
+Use `ft_obtain` to extract the next line and update the buffer data for the next calls.
+
+ -**Main function
+
+Validate input, call `ft_read` and `ft_obtain`, **manage memory**, and return the line.
 
 ## Resources
 
