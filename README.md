@@ -12,8 +12,9 @@ Reads a file descriptor line by line
 
 ## Instructions
  The project must be compiled with a buffer size defined at compile time: 
-
-`cc -Wall -Wextra -Werror -D BUFFER_SIZE=42 get_next_line.c get_next_line_utils.c` .
+```bash
+cc -Wall -Wextra -Werror -D BUFFER_SIZE=42 get_next_line.c get_next_line_utils.c
+```
 
 The function must also compile and work correctly without the -D BUFFER_SIZE flag, using a default value.
 
