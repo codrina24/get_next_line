@@ -8,7 +8,7 @@ Reads a file descriptor line by line
 ## Description
 
  Get_next_line is a C project that implements a function capable of reading a file descriptor line by line.The objective of this project is to highlight the importance of static variables, which are very useful for preserving state between function calls, simplifying line-based input, implementing buffered reading, and managing memory properly. 
- By calling get_next_line() repeatedly, the program returns one line at a time from a file or from standard input, without reading the entire content at once.
+ By calling get_next_line() repeatedly, the function returns one line at a time from a file or from standard input, without reading the entire content at once.
 
 ## Instructions
  The project must be compiled with a buffer size defined at compile time: 
@@ -19,9 +19,9 @@ The function must also compile and work correctly without the -D BUFFER_SIZE fla
 
 ## Core idea
 
-A static variable holds data read from the file descriptor that hasn’t been returned yet(*pending data*).
+A static variable holds data read from the file descriptor that hasn’t been returned yet (*pending data*).
 
-The function reads from the file descriptor using the standard library C `read()` function, with a fixed buffer size (BUFFER_SIZE).
+The function reads from the file descriptor using the standard C library  `read()` function, with a fixed buffer size (BUFFER_SIZE).
 
 Data is appended to the static buffer until a newline character (\n) is found or the end of the file (EOF) is reached.
 
