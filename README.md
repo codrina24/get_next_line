@@ -7,8 +7,8 @@ Reads a file descriptor line by line
 
 ## Description
 
- Get_next_line is a C project that implements a function capable of reading a file descriptor line by line. The goal of this project is to simplify line-based input handling, memory management, static variables, and buffered reading.
-By calling get_next_line() repeatedly, the program returns one line at a time from a file or from standard input, without reading the entire content at once.
+ Get_next_line is a C project that implements a function capable of reading a file descriptor line by line.The objective of this project is to highlight the importance of static variables, which are very useful for preserving state between function calls, simplifying line-based input, implementing buffered reading, and managing memory properly. 
+ By calling get_next_line() repeatedly, the program returns one line at a time from a file or from standard input, without reading the entire content at once.
 
 ## Instructions
  The project must be compiled with a buffer size defined at compile time: 
