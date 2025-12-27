@@ -11,16 +11,7 @@ Reads a file descriptor line by line
  By calling get_next_line() repeatedly, the program returns one line at a time from a file or from standard input, without reading the entire content at once.
 
 # Instructions
-# # Prototype
-  char *get_next_line(int fd);
-# # Files
-  get_next_line.c
-  get_next_line_utils.c
-  get_next_line.h
-
-# # Compilation
-
-The project must be compiled with a buffer size defined at compile time: 
+ The project must be compiled with a buffer size defined at compile time: 
 
 `cc -Wall -Wextra -Werror -D BUFFER_SIZE=42 get_next_line.c get_next_line_utils.c` .
 
