@@ -32,11 +32,11 @@ Create `get_next_line.c`, `get_next_line_utils.c`, and `get_next_line.h`.
 
  - **Helper functions**
  
-Implement `ft_strlen_next`, `ft_strchr_next`, `ft_strjoin_next`, `ft_strdup_next`, and `ft_substr_next` for string handling.
+Implement `ft_strlen_next`, `ft_strchr_next`, `ft_strjoin_next`, `ft_strdup_next`, and `ft_substr_next` for string manipulation.
 
  - **Reading process**
 
-Use `read()` in ft_read to read BUFFER_SIZE chunks.
+Use `read()` in `ft_read` to read BUFFER_SIZE chunks.
 
 Append to static buffer until a newline('\n') or EOF is reached.
 
