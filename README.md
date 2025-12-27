@@ -23,9 +23,9 @@ A static variable holds data read from the file descriptor that hasn’t been re
 
 The function reads from the file descriptor using the standard library C `read()` function, with a fixed buffer size (BUFFER_SIZE).
 
-Data is appended to the static storage until a newline character (\n) is found or no more data can be read.
+Data is appended to the static buffer until a newline character (\n) is found or the end of the file (EOF) is reached.
 
-## *Step* by *step* until we get *line* by *line* 
+### *Step* by *step* until we get *line* by *line* 
  - **Setup**
 
 Create `get_next_line.c`, `get_next_line_utils.c`, and `get_next_line.h`.
@@ -38,7 +38,7 @@ Implement `ft_strlen_next`, `ft_strchr_next`, `ft_strjoin_next`, `ft_strdup_next
 
 Use `read()` in ft_read to read BUFFER_SIZE chunks.
 
-Append to static storage until a newline('\n') or EOF is reached.
+Append to static buffer until a newline('\n') or EOF is reached.
 
  - **Get the lines**
 
@@ -47,6 +47,12 @@ Use `ft_obtain` to extract the next line and update the static buffer for the ne
  - **Main function**
 
 Validate input, call `ft_read` and `ft_obtain`, **manage memory**, and return the line.
+
+- **Return**
+- 
+  Returns the next line read from the fd, including the newline character (`\n`) if present.
+  Returns `NULL` if there is nothing left to read or if an error occurs.
+  Each call returns one line at a time, preserving unread data in the static buffer for the next call, without losing the current reading position.
 
 ## Resources
 
