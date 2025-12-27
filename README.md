@@ -19,9 +19,9 @@ The function must also compile and work correctly without the -D BUFFER_SIZE fla
 
 ## Core idea
 
-A static variable is used to store leftover data that has been read but not yet returned.
+A static variable holds data read from the file descriptor that hasn’t been returned yet(*pending data*).
 
-The function reads from the file descriptor using read() with a fixed buffer size (BUFFER_SIZE).
+The function reads from the file descriptor using the standard library C `read()` function, with a fixed buffer size (BUFFER_SIZE).
 
 Data is appended to the static storage until a newline character (\n) is found or no more data can be read.
 
