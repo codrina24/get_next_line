@@ -26,24 +26,24 @@ The function reads from the file descriptor using read() with a fixed buffer siz
 Data is appended to the static storage until a newline character (\n) is found or no more data can be read.
 
 ## Step by step until we get line by line 
- -**Setup**
+ - **Setup**
 Create `get_next_line.c`, `get_next_line_utils.c`, and `get_next_line.h`.
 
- -**Helper functions**
+ - **Helper functions**
  
 Implement `ft_strlen_next`, `ft_strchr_next`, `ft_strjoin_next`, `ft_strdup_next`, and `ft_substr_next` for string handling.
 
- -**Reading process**
+ - **Reading process**
 
 Use `read()` in ft_read to read BUFFER_SIZE chunks.
 
 Append to static storage until a newline('\n') or EOF is reached.
 
- -**Get the lines**
+ - **Get the lines**
 
 Use `ft_obtain` to extract the next line and update the buffer data for the next calls.
 
- -**Main function
+ - **Main function**
 
 Validate input, call `ft_read` and `ft_obtain`, **manage memory**, and return the line.
 
