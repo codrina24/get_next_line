@@ -48,7 +48,7 @@ Use `ft_obtain` to extract the next line and update the static buffer for the ne
 
 Validate input, call `ft_read` and `ft_obtain`, **manage memory**, and return the line.
 
-- **Return**
+- **Return()**
 
 Returns the next line read from the fd, including the newline character (`\n`) if present.
   
