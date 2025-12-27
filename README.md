@@ -1,4 +1,4 @@
-<img width="1344" height="768" alt="get_next_line_banner" src="https://github.com/user-attachments/assets/47dc4136-00ee-45cd-85cd-fabe15e5c0e6" />
+<img width="1339" height="611" alt="get_next_line_banner(1)" src="https://github.com/user-attachments/assets/75d2d4d5-abf4-4574-ae96-ba940216b6be" />
 
 This project has been created as part of the 42 curriculum by coholbur.
 
