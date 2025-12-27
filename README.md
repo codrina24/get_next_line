@@ -25,25 +25,6 @@ The function reads from the file descriptor using read() with a fixed buffer siz
 
 Data is appended to the static storage until a newline character (\n) is found or no more data can be read.
 
-# # Step-by-step behavior
-
-Read BUFFER_SIZE bytes from the file descriptor.
-
-Append the read data to the static buffer.
-
-Check for a newline character.
-
-If a newline is found:
-
-Extract the line (including \n)
-
-Keep the remaining data in the static buffer for the next call
-
-If end of file is reached:
-
-Return the remaining data (if any)
-
-Otherwise, return NULL
 
 # Resources
 
