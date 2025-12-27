@@ -25,8 +25,9 @@ The function reads from the file descriptor using read() with a fixed buffer siz
 
 Data is appended to the static storage until a newline character (\n) is found or no more data can be read.
 
-## Step by step until we get line by line 
+## *Step* by *step* until we get *line* by *line* 
  - **Setup**
+
 Create `get_next_line.c`, `get_next_line_utils.c`, and `get_next_line.h`.
 
  - **Helper functions**
@@ -41,7 +42,7 @@ Append to static storage until a newline('\n') or EOF is reached.
 
  - **Get the lines**
 
-Use `ft_obtain` to extract the next line and update the buffer data for the next calls.
+Use `ft_obtain` to extract the next line and update the static buffer for the next calls.
 
  - **Main function**
 
