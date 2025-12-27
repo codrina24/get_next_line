@@ -17,7 +17,7 @@ Reads a file descriptor line by line
 
 The function must also compile and work correctly without the -D BUFFER_SIZE flag, using a default value.
 
-## Core idea
+## Core Idea
 
 A static variable holds data read from the file descriptor that hasn’t been returned yet (*pending data*).
 
@@ -25,7 +25,7 @@ The function reads from the file descriptor using the standard C library  `read(
 
 Data is appended to the static buffer until a newline character (\n) is found or the end of the file (EOF) is reached.
 
-### *Step* by *step* until we get *line* by *line* 
+### *Step* by *Step* until we get *Line* by *Line* 
  - **Setup**
 
 Create `get_next_line.c`, `get_next_line_utils.c`, and `get_next_line.h`.
