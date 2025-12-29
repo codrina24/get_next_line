@@ -1,9 +1,9 @@
-<img width="1339" height="611" alt="get_next_line_banner(1)" src="https://github.com/user-attachments/assets/75d2d4d5-abf4-4574-ae96-ba940216b6be" />
-
 *This project has been created as part of the 42 curriculum by coholbur.*
 
 # Get_next_line
 Reads a file descriptor line by line
+
+<img width="1339" height="611" alt="get_next_line_banner(1)" src="https://github.com/user-attachments/assets/75d2d4d5-abf4-4574-ae96-ba940216b6be" />
 
 ## Description
 
@@ -17,14 +17,6 @@ cc -Wall -Wextra -Werror -D BUFFER_SIZE=42 get_next_line.c get_next_line_utils.c
 ```
 
 The function must also compile and work correctly without the -D BUFFER_SIZE flag, using a default value.
-
-## Core Idea
-
-A static variable holds data read from the file descriptor that hasn’t been returned yet (*pending data*).
-
-The function reads from the file descriptor using the standard C library  `read()` function, with a fixed buffer size (BUFFER_SIZE).
-
-Data is appended to the static buffer until a newline character (\n) is found or the end of the file (EOF) is reached.
 
 ### *Step* by *Step* until we get *Line* by *Line* 
  - **Setup**
